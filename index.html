@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculateur de la valeur nutritionnelle</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #333;
+    }
+    .navbar-nav .nav-link {
+      color: #666;
+    }
+    .hero-section {
+      background-image: url("first.gif");
+      background-size: cover;
+      background-position: center;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero-section h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero-section p {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+    .feature-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      height: 100%;
+    }
+    .feature-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .feature-card h4 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .feature-card p {
+      font-size: 16px;
+      color: #666;
+    }
+    .footer {
+      background-color: #333;
+      padding: 5px 0;
+      color: #fff;
+      text-align: center;
+    }
+    .footer p {
+      margin: 0;
+    }
+    .custom-footer {
+  background-image: url('imgs/bg2.png');
+  background-size: cover;
+  background-position: center;
+}
+.footer-logo {
+  height: 50px;
+}
+
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="imgs/syr.png" alt="Logo"  style="width: 80px;"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="Home.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="view/singup.html">Inscription</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="view/login.html">Connexion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero-section" style="background-image: url('imgs/bg.png');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <a href="controller/fct1.php" class="btn btn-primary btn-lg">Commencer le calcule</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center mb-4">pourquoi calculer la valeur nutritionnelle d'un plats??</h2>
+        <p>Le suivi régulier de votre régime alimentaire est d'une importance capitale pour maintenir une alimentation saine et équilibrée. En connaissant les valeurs nutritionnelles des aliments que vous consommez, vous êtes en mesure de prendre des décisions éclairées concernant votre santé et votre bien-être.
+        En suivant votre régime alimentaire, vous pouvez identifier les déséquilibres nutritionnels, tels qu'une consommation excessive de graisses ou de sucres, et apporter les ajustements nécessaires. Cela vous permet de vous assurer que vous recevez les nutriments essentiels dont votre corps a besoin pour fonctionner correctement.
+        De plus, le suivi de votre régime alimentaire peut vous aider à atteindre vos objectifs spécifiques, qu'il s'agisse de perdre du poids, de maintenir un poids santé ou de développer des habitudes alimentaires durables. Vous pouvez ajuster vos portions, choisir des aliments plus nutritifs et équilibrés, et surveiller votre consommation calorique.
+        En résumé, le suivi régulier de votre régime alimentaire est un outil puissant pour prendre soin de votre santé. Cela vous permet de faire des choix alimentaires éclairés, de corriger les déséquilibres nutritionnels et de progresser vers vos objectifs personnels. Prenez soin de vous en prenant soin de votre alimentation!</p>
+      </div>
+    </div>
+    <h2 class="text-center my-4">Menu des fonctions</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="feature-card">
+          <a href="controller/fct1.php">
+            <img src="imgs/home.webp" alt="Feature 1">
+            <h4>Calculer la valeur nutritionnelle</h4>
+          </a>
+          <p>vous pouvez calculer la valeur nutritionnelle de votre plat à partir de leurs composantes et leurs quantités </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-card">
+          <a href="controller/youshould.php">
+            <img src="imgs/home.webp" alt="Feature 2">
+            <h4>proposition des plats</h4>
+          </a>
+          <p>vous pouvez avoir des propositions de plats à partir de la saisie de la valeur nutritionnelle que vous voulez</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-card">
+          <a href="controller/youshould.php">
+            <img src="imgs/home.webp" alt="Feature 3">
+            <h4>enregistrer vos plats</h4>
+          </a>
+          <p>vous pouvez enregistrer vos plats pour suivre votre alimentation</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-card">
+          <a href="controller/youshould.php">
+            <img src="imgs/home.webp" alt="Feature 4">
+            <h4>Plants de régime</h4>
+          </a>
+          <p>vouz pouvez choisir un plant de regime deja existant</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer mt-5 custom-footer text-dark">
+    <div class="container">
+      <p><img src="imgs/syr.png" alt="Logo"  style="width: 80px;">Nutrition Calculator ©  2023. All rights reserved.<img src="imgs/logo.png" alt="Logo" class="footer-logo" style="background-color: transparent;"></p>
+    </div>
+  </footer>
+  
+</body>
+</html>
