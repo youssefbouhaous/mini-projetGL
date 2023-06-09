@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #C4E7B1;
+      background-size: cover;
+      background-image: url("../imgs/bg2.png");
+    }
+    .container {
+      padding-top: 150px;
+      text-align: center;
+    }
+    h1 {
+      color: black;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Connexion</h1>
+    <form  method="POST" action="../controller/utilisateur-controller.php?action=login">
+      <div class="form-group">
+        <label for="email">adresse e-mail </label>
+        <input type="email" class="form-control col-md-6 mx-auto" id="email" name="email" placeholder="Entrer email">
+      </div>
+      <div class="form-group">
+        <label for="password">mot de passe</label>
+        <input type="password" class="form-control col-md-6 mx-auto" id="password" name="password" placeholder="mot de passe ">
+      </div>
+      <button type="submit" class="btn btn-primary">Connexion</button>
+      <a href="singup.html" class="btn btn-success">Inscription</a>
+    </form>
+  </div>
+</body>
+</html>
